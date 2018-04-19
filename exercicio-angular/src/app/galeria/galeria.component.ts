@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaleriaComponent implements OnInit {
 
+  imagens: string[] = ["i1", "i2", "i3", "i4", "i5"];
+  expandirFoto: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  public abreImagem() {
+    alert("trocar");
+    if (this.expandirFoto) this.expandirFoto = false;
+    else if (!this.expandirFoto) this.expandirFoto = true;
   }
 
 }

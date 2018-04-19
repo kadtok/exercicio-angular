@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { MenuComponent } from './topbar/menu/menu.component';
+import { CarrosselComponent } from './carrossel/carrossel.component';
+import { MainContainerComponent } from './main-container/main-container.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { MenuComponent } from './topbar/menu/menu.component';
     AppComponent,
     TopbarComponent,
     GaleriaComponent,
-    MenuComponent
+    MenuComponent,
+    CarrosselComponent,
+    MainContainerComponent
   ],
   imports: [
     BrowserModule
