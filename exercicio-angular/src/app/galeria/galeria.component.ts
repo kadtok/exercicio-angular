@@ -15,7 +15,6 @@ export class GaleriaComponent implements OnInit {
   ngOnInit() {
   }
   public abreImagem() {
-    alert("trocar");
     if (this.expandirFoto) this.expandirFoto = false;
     else if (!this.expandirFoto) this.expandirFoto = true;
   }
