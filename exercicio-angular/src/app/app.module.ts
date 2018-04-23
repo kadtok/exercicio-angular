@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MainContainerModule } from './main-container/main-container.module';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
-import { GaleriaComponent } from './galeria/galeria.component';
 import { MenuComponent } from './topbar/menu/menu.component';
-import { CarrosselComponent } from './carrossel/carrossel.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 
 
@@ -14,13 +14,12 @@ import { MainContainerComponent } from './main-container/main-container.componen
   declarations: [
     AppComponent,
     TopbarComponent,
-    GaleriaComponent,
     MenuComponent,
-    CarrosselComponent,
     MainContainerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,MainContainerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
