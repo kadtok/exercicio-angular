@@ -2,7 +2,7 @@
 
   <div class="row" *ngIf="!expandirFoto; else detalheImagem">
     <div *ngFor="let image of imagens" class="card col-md-2" style="padding: 10px; margin: 10px">
-      <img class="card-img-top" src="https://img00.deviantart.net/5ab6/i/2018/088/5/f/hanannie_day___18_by_yamio-dc7ca76.png" alt="Card image cap">
+      <img class="card-img-top" [src]="imagens.thumb" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">
           Hanannie Day</h5>

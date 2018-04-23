@@ -10,6 +10,9 @@ import { GaleriaComponent } from './galeria/galeria.component';
   ],
   declarations: [
     GaleriaComponent
+  ],
+  exports:[
+    GaleriaComponent
   ]
 })
 export class MainContainerModule { }
